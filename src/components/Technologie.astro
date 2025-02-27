@@ -1,0 +1,10 @@
+---
+const { logo, name } = Astro.props;
+---
+
+<div
+  class="flex gap-2 items-center w-fit px-2 py-1 rounded-xl bg-white/30"
+>
+  <img class="w-5" src={logo.src} alt={name} />
+  <p>{name}</p>
+</div>
