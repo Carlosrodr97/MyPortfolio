@@ -7,11 +7,13 @@ import Vite from "../assets/Icons/vite.svg";
 import Node from "../assets/Icons/node-js.svg";
 import PostgreSQL from "../assets/Icons/postgresql.svg";
 import Tailwind from "../assets/Icons/tailwind.svg";
+import AstroIcon from "../assets/Icons/astro.svg";
 import PreviewRecreationOfGoogle from "../assets/RecreationOfGoogle_2025-02-24.png";
 import PreviewRecreationOfYouTube from "../assets/RecreationOfYouTube_2025-02-24.png";
 import PreviewToDoList from "../assets/ToDoList_2025-02-26.png";
 import PreviewTiendaOnline from "../assets/TiendaOnline_2025-02-24.png";
 import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png";
+import PreviewRestaurantMenu from "../assets/RestaurantMenu_2025-03-14.png";
 ---
 
 <div
@@ -19,6 +21,16 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
   class="flex flex-col align-middle text-center w-2xl py-5 gap-1 max-sm:w-full"
 >
   <h2 class="text-2xl text-red-400 max-sm:text-xl">PROYECTOS</h2>
+  <CardProject
+    src={PreviewRestaurantMenu}
+    title="Menú de Restaurante"
+    description="Este proyecto consiste en una aplicación web que permite a los clientes de un restaurante visualizar el menú."
+    date="03/2025"
+    link="https://restaurant-menu-six-phi.vercel.app"
+  >
+    <Technologie logo={AstroIcon} name="Astro" />
+    <Technologie logo={Tailwind} name="Tailwind" />
+  </CardProject>
   <CardProject
     src={PreviewScraperURL}
     title="ScraperURL"
@@ -35,7 +47,7 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
     src={PreviewRecreationOfGoogle}
     title="Recreación de Google"
     description="Este proyecto es una recreación de la página de inicio de Google."
-    date="02/2025"
+    date="01/2025"
     link="https://recreation-of-google.vercel.app/"
   >
     <Technologie logo={React} name="React" />
@@ -45,7 +57,7 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
     src={PreviewToDoList}
     title="Lista de la compra"
     description="Este proyecto es una lista de la compra. Puede agregar artículos y su cantidad o eliminarlos."
-    date="02/2025"
+    date="01/2025"
   >
     <Technologie logo={React} name="React" />
     <Technologie logo={Vite} name="Vite" />
@@ -56,7 +68,7 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
     src={PreviewRecreationOfYouTube}
     title="Recreación de YouTube"
     description="Este proyecto es una recreación de la página de inicio de YouTube."
-    date="02/2025"
+    date="01/2025"
     link="https://recreation-of-you-tube.vercel.app/"
   >
     <Technologie logo={React} name="React" />
@@ -66,7 +78,7 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
     src={PreviewTiendaOnline}
     title="Tienda Online"
     description="Este proyecto consiste en la creación de una tienda online con características principales como gestión de productos, imágenes alojadas en Amazon S3, búsqueda y filtrado, autenticación y roles, persistencia de datos, etc."
-    date="02/2025"
+    date="10/2024"
     link="https://tienda-online-pearl.vercel.app/"
   >
     <Technologie logo={React} name="React" />
@@ -78,7 +90,7 @@ import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png
     src={PreviewVacacionesToscano}
     title="Vacaciones Toscano"
     description="Este proyecto es una aplicación web para la gestión de solicitudes de vacaciones, diseñada para facilitar el proceso de petición y aprobación por parte de los empleados y administradores de la empresa Toscano Línea Electrónica."
-    date="02/2025"
+    date="07/2024"
     link="https://vacaciones-toscano.vercel.app/"
   >
     <Technologie logo={React} name="React" />
