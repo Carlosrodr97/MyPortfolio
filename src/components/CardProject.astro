@@ -26,7 +26,7 @@ const { src, title, date, description, link } = Astro.props;
       <h3>{date}</h3>
     </span>
     <p class="text-start max-sm:text-sm">{description}</p>
-    <span class="flex gap-2">
+    <span class="flex flex-wrap gap-2">
       <slot />
     </span>
   </span>
