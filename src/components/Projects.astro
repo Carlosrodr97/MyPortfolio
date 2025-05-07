@@ -1,20 +1,13 @@
 ---
 import CardProject from "./CardProject.astro";
-import PreviewScraperURL from "../assets/ScraperURL_2025-02-24.png";
 import Technologie from "./Technologie.astro";
-import React from "../assets/Icons/react.svg";
-import Vite from "../assets/Icons/vite.svg";
-import Node from "../assets/Icons/node-js.svg";
-import PostgreSQL from "../assets/Icons/postgresql.svg";
-import Tailwind from "../assets/Icons/tailwind.svg";
-import AstroIcon from "../assets/Icons/astro.svg";
-import PreviewRecreationOfGoogle from "../assets/RecreationOfGoogle_2025-02-24.png";
-import PreviewRecreationOfYouTube from "../assets/RecreationOfYouTube_2025-02-24.png";
-import PreviewToDoList from "../assets/ToDoList_2025-02-26.png";
-import PreviewTiendaOnline from "../assets/TiendaOnline_2025-02-24.png";
-import PreviewVacacionesToscano from "../assets/VacacionesToscano_2025-02-24.png";
-import PreviewRestaurantMenu from "../assets/RestaurantMenu_2025-03-14.png";
-import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
+import React from "../../public/assets/Icons/react.svg";
+import Vite from "../../public/assets/Icons/vite.svg";
+import Node from "../../public/assets/Icons/node-js.svg";
+import PostgreSQL from "../../public/assets/Icons/postgresql.svg";
+import Tailwind from "../../public/assets/Icons/tailwind.svg";
+import AstroIcon from "../../public/assets/Icons/astro.svg";
+import Next from "../../public/assets/Icons/next-js.svg";
 ---
 
 <div
@@ -23,10 +16,18 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
 >
   <h2 class="text-2xl text-red-400 max-sm:text-xl">PROYECTOS</h2>
   <CardProject
-    src={PreviewFutsal24DH}
+    title="Sky Blue Weather"
+    description="Aplicación web que permite consultar el clima de cualquier ciudad de España, utilizando la API de AEMET. Incluye una interfaz intuitivay sencilla."
+    date="En desarrollo"
+    link="https://sky-blue-weather.vercel.app/"
+  >
+    <Technologie logo={Next} name="Next" />
+    <Technologie logo={Tailwind} name="Tailwind" />
+  </CardProject>
+  <CardProject
     title="Futsal24DH"
     description="Web para un Torneo de Fútbol Sala, donde los equipos podrán inscribirse para participar y ver en tiempo real durante el torneo los cambios en los resultados y clasificación del torneo."
-    date="En desarrollo"
+    date="04/2025"
     link="https://futsal24-dh.vercel.app/"
   >
     <Technologie logo={AstroIcon} name="Astro" />
@@ -36,7 +37,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={React} name="React" />
   </CardProject>
   <CardProject
-    src={PreviewRestaurantMenu}
     title="Menú de Restaurante"
     description="Aplicación web que permite a los clientes de un restaurante visualizar el menú."
     date="03/2025"
@@ -46,7 +46,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={Tailwind} name="Tailwind" />
   </CardProject>
   <CardProject
-    src={PreviewScraperURL}
     title="ScraperURL"
     description="Aplicación web que en la actualidad analiza y extrae elementos SVG de sitios web a partir de una URL proporcionada. Próximamente podrá extraer cualquier elemento HTML."
     date="02/2025"
@@ -58,7 +57,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={Tailwind} name="Tailwind" />
   </CardProject>
   <CardProject
-    src={PreviewRecreationOfGoogle}
     title="Recreación de Google"
     description="Recreación de la página de inicio de Google."
     date="01/2025"
@@ -68,7 +66,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={Vite} name="Vite" />
   </CardProject>
   <CardProject
-    src={PreviewToDoList}
     title="Lista de la compra"
     description="Lista de la compra. Puede agregar artículos y su cantidad o eliminarlos."
     date="01/2025"
@@ -80,7 +77,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={PostgreSQL} name="PostgreSQL" />
   </CardProject>
   <CardProject
-    src={PreviewRecreationOfYouTube}
     title="Recreación de YouTube"
     description="Recreación de la página de inicio de YouTube."
     date="01/2025"
@@ -90,7 +86,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={Vite} name="Vite" />
   </CardProject>
   <CardProject
-    src={PreviewTiendaOnline}
     title="Tienda Online"
     description="Tienda online con características principales como gestión de productos, imágenes alojadas en Amazon S3, búsqueda y filtrado, autenticación y roles, persistencia de datos, etc."
     date="10/2024"
@@ -102,7 +97,6 @@ import PreviewFutsal24DH from "../assets/Futsal24DH_2025-04-06.png";
     <Technologie logo={PostgreSQL} name="PostgreSQL" />
   </CardProject>
   <CardProject
-    src={PreviewVacacionesToscano}
     title="Vacaciones Toscano"
     description="Aplicación web para la gestión de solicitudes de vacaciones, diseñada para facilitar el proceso de petición y aprobación por parte de los empleados y administradores de una empresa."
     date="07/2024"
