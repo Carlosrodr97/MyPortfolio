@@ -1,6 +1,13 @@
 ---
 import "../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
+
+const { 
+  title = "Carlos Rodríguez Cebador | Desarrollador Web",
+  description = "Portafolio profesional de Carlos Rodríguez Cebador, desarrollador web especializado en tecnologías frontend y backend.",
+  image = "/Logo-DEV.png",
+  canonicalURL = "https://carlosrodriguezcebador.com"
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -8,10 +15,36 @@ import Analytics from "@vercel/analytics/astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Portafolio | Carlos Rodríguez Cebador</title>
+
+    <!-- SEO básico -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="desarrollo web, programación, portafolio, Carlos Rodríguez, frontend, backend" />
+    <meta name="author" content="Carlos Rodríguez Cebador" />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Preconectar a orígenes externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"

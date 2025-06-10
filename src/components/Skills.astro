@@ -14,6 +14,7 @@ import JavaScript from "../../public/assets/Icons/javascript.svg";
 import Next from "../../public/assets/Icons/next-js.svg";
 import Angular from "../../public/assets/Icons/angular.svg";
 import VSCode from "../../public/assets/Icons/vs-code.svg";
+import { Image } from "astro:assets";
 ---
 
 <section id="Skills" class="py-20 bg-white">
@@ -34,14 +35,14 @@ import VSCode from "../../public/assets/Icons/vs-code.svg";
       >
         <h3 class="text-2xl font-bold text-slate-900 mb-6">Frontend</h3>
         <div class="grid grid-cols-3 gap-10">
-          <img src={Html.src} alt="Html" class="size-12" />
-          <img src={Css.src} alt="Css" class="size-12" />
-          <img src={JavaScript.src} alt="JavaScript" class="size-12" />
-          <img src={React.src} alt="React" class="size-12" />
-          <img src={Next.src} alt="Next.js" class="size-12" />
-          <img src={Angular.src} alt="Angular" class="size-12" />
-          <img src={AstroIcon.src} alt="Astro" class="size-12" />
-          <img src={Tailwind.src} alt="Tailwind" class="size-12" />
+          <Image src={Html} alt="Html" class="size-12" width={12} height={12} />
+          <Image src={Css} alt="Css" class="size-12" width={12} height={12} />
+          <Image src={JavaScript} alt="JavaScript" class="size-12" width={12} height={12} />
+          <Image src={React} alt="React" class="size-12" width={12} height={12} />
+          <Image src={Next} alt="Next.js" class="size-12" width={12} height={12} />
+          <Image src={Angular} alt="Angular" class="size-12" width={12} height={12} />
+          <Image src={AstroIcon} alt="Astro" class="size-12" width={12} height={12} />
+          <Image src={Tailwind} alt="Tailwind" class="size-12" width={12} height={12} />
         </div>
       </div>
 
@@ -50,9 +51,9 @@ import VSCode from "../../public/assets/Icons/vs-code.svg";
       >
         <h3 class="text-2xl font-bold text-slate-900 mb-6">Backend</h3>
         <div class="grid grid-cols-3 gap-10">
-          <img src={Node.src} alt="Node" class="size-12" />
-          <img src={MySQL.src} alt="MySQL" class="size-12" />
-          <img src={PostgreSQL.src} alt="PostgreSQL" class="size-12" />
+          <Image src={Node} alt="Node" class="size-12" width={12} height={12} />
+          <Image src={MySQL} alt="MySQL" class="size-12" width={12} height={12} />
+          <Image src={PostgreSQL} alt="PostgreSQL" class="size-12" width={12} height={12} />
         </div>
       </div>
 
@@ -61,10 +62,10 @@ import VSCode from "../../public/assets/Icons/vs-code.svg";
       >
         <h3 class="text-2xl font-bold text-slate-900 mb-6">Herramientas</h3>
         <div class="grid grid-cols-3 gap-10">
-          <img src={Vite.src} alt="Vite" class="size-12" />
-          <img src={GitHub.src} alt="GitHub" class="size-12" />
-          <img src={Docker.src} alt="Docker" class="size-12" />
-          <img src={VSCode.src} alt="VSCode" class="size-12" />
+          <Image src={Vite} alt="Vite" class="size-12" width={12} height={12} />
+          <Image src={GitHub} alt="GitHub" class="size-12" width={12} height={12} />
+          <Image src={Docker} alt="Docker" class="size-12" width={12} height={12} />
+          <Image src={VSCode} alt="VSCode" class="size-12" width={12} height={12} />
         </div>
       </div>
     </div>

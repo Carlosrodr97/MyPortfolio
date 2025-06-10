@@ -1,5 +1,8 @@
 ---
 import { Github, Linkedin } from "@lucide/astro";
+
+import profileImage from "../../public/assets/carlos.webp";
+import { Image } from "astro:assets";
 ---
 
 <section id="AboutMy" class="flex flex-col items-center justify-center gap-10 py-25 px-4 lg:flex-row lg:justify-around lg:px-0">
@@ -55,10 +58,14 @@ import { Github, Linkedin } from "@lucide/astro";
       <div
         class="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/20"
       >
-        <img
-          src="./assets/carlos.png"
+        <Image
+          src={profileImage}
           alt="Carlos Rodríguez"
           class="w-full h-full object-cover"
+          width={800}
+          height={600}
+          loading="lazy"
+          format="webp"
         />
       </div>
       <div

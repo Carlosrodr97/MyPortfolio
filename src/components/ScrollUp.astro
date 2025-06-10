@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import ArrowUp from "../../public/assets/Icons/arrow-up.svg";
 ---
 
@@ -6,5 +7,5 @@ import ArrowUp from "../../public/assets/Icons/arrow-up.svg";
   class="invert fixed top-19/20 right-5 p-2 rounded-full bg-white/20 hover:bg-white/30 max-sm:top-47/50"
   href="#top"
 >
-  <img src={ArrowUp.src} alt="Arrow Up" />
+  <Image src={ArrowUp} alt="Arrow Up" width={20} height={20} />
 </a>

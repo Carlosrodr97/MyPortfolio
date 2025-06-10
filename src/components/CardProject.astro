@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const { title, date, description, link } = Astro.props;
 
 const screenShot = `https://api.microlink.io/?url=${link}&screenshot=true&embed=screenshot.url`;
@@ -8,10 +10,15 @@ const screenShot = `https://api.microlink.io/?url=${link}&screenshot=true&embed=
   class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
 >
   <div class="relative overflow-hidden">
-    <img
+    <Image
       src={screenShot}
-      alt={title}
+      alt={`Vista previa del proyecto ${title}`}
       class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+      width="600"
+      height="300"
+      loading="lazy"
+      decoding="async"
+      format="webp"
     />
     <div
       class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
@@ -19,6 +26,8 @@ const screenShot = `https://api.microlink.io/?url=${link}&screenshot=true&embed=
       <div class="p-4">
         <a
           href={link}
+          target="_blank"
+          rel="noopener noreferrer"
           class="px-4 py-2 bg-blue-500 text-white rounded-lg inline-block hover:bg-blue-600 transition-colors"
         >
           Ver Proyecto
