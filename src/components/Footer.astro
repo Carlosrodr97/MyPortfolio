@@ -1,21 +1,108 @@
 ---
-
+import Logo from "../../public/assets/Icons/Logo-version-1.4/Logo-DEV.svg";
+import { Mail, Phone, MapPin, Github, Linkedin } from "@lucide/astro";
 ---
 
-<div
-  class="flex flex-col align-middle text-center w-3xl py-8 space-y-2 max-sm:w-full max-sm:px-2"
->
-  <p class="text-sm text-gray-400">
-    Este proyecto es mi portafolio personal, diseñado para mostrar mis
-    habilidades y proyectos de desarrollo web. La interfaz fue creada en <span
-      class="text-white">Figma</span
-    >, asegurando un diseño moderno y funcional. El frontend está desarrollado
-    con
-    <span class="text-white">Astro</span>, utilizando <span class="text-white"
-      >Tailwind CSS</span
-    > para un estilo limpio y responsive. Todo el código fue trabajado en <span
-      class="text-white">Visual Studio Code</span
-    > y el sitio está desplegado en <span class="text-white">Vercel</span> para un
-    rendimiento óptimo y accesibilidad global.
-  </p>
-</div>
+<footer class="bg-slate-900 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <Logo class="size-16" />
+        <p class="text-slate-400 mb-4">
+          Desarrollador web especializado en crear experiencias digitales
+          modernas y atractivas.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="https://github.com/Carlosrodr97"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-slate-400 hover:text-white transition-colors"
+          >
+            <Github class="size-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carlos-rodríguez-cebador-b99815164"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-slate-400 hover:text-white transition-colors"
+          >
+            <Linkedin class="size-5" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href="#AboutMy"
+              class="text-slate-400 hover:text-white transition-colors"
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Projects"
+              class="text-slate-400 hover:text-white transition-colors"
+            >
+              Proyectos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Skills"
+              class="text-slate-400 hover:text-white transition-colors"
+            >
+              Habilidades
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Contact"
+              class="text-slate-400 hover:text-white transition-colors"
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="flex items-center gap-3 cursor-pointer">
+              <Mail class="size-5" />
+              <span class="text-slate-400">carlosrodriguezcebador@hotmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center gap-3 cursor-pointer">
+              <Phone class="size-5" />
+              <span class="text-slate-400">+34 602 53 34 97</span>
+            </a>
+          </li>
+          <li class="flex items-center gap-3">
+            <MapPin class="size-5" />
+            <span class="text-slate-400">Sevilla, España</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center"
+    >
+      <p class="text-slate-400 text-sm">
+        © 2025 Carlos Rodríguez. Todos los derechos reservados.
+      </p>
+      <p class="text-slate-400 text-sm mt-2 md:mt-0">
+        Diseñado y desarrollado con <span class="text-red-500">❤</span> usando
+        Astro y TailwindCSS
+      </p>
+    </div>
+  </div>
+</footer>

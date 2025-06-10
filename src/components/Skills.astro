@@ -11,24 +11,62 @@ import Docker from "../../public/assets/Icons/docker.svg";
 import MySQL from "../../public/assets/Icons/mysql.svg";
 import PostgreSQL from "../../public/assets/Icons/postgresql.svg";
 import JavaScript from "../../public/assets/Icons/javascript.svg";
+import Next from "../../public/assets/Icons/next-js.svg";
+import Angular from "../../public/assets/Icons/angular.svg";
+import VSCode from "../../public/assets/Icons/vs-code.svg";
 ---
 
-<div id="Skills" class="flex flex-col items-center gap-4">
-  <h2 class="text-2xl text-red-400 max-sm:text-xl">APTITUDES</h2>
-  <div
-    class="grid grid-cols-4 gap-6 border border-gray-300/20 bg-white/10 p-4 rounded-2xl"
-  >
-    <img src={Vite.src} alt="Vite" class="w-12 h-12" />
-    <img src={React.src} alt="React" class="w-12 h-12" />
-    <img src={Tailwind.src} alt="Tailwind" class="w-12 h-12" />
-    <img src={Node.src} alt="Node" class="w-12 h-12" />
-    <img src={Html.src} alt="Html" class="w-12 h-12" />
-    <img src={Css.src} alt="Css" class="w-12 h-12" />
-    <img src={AstroIcon.src} alt="Astro" class="w-12 h-12" />
-    <img src={GitHub.src} alt="GitHub" class="w-12 h-12" />
-    <img src={Docker.src} alt="Docker" class="w-12 h-12" />
-    <img src={MySQL.src} alt="MySQL" class="w-12 h-12" />
-    <img src={PostgreSQL.src} alt="PostgreSQL" class="w-12 h-12" />
-    <img src={JavaScript.src} alt="JavaScript" class="w-12 h-12" />
+<section id="Skills" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold text-slate-900">
+        Mis Habilidades
+      </h2>
+      <div class="mt-4 h-1 w-24 bg-blue-500 mx-auto"></div>
+      <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
+        Tecnologías y herramientas con las que trabajo.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div
+        class="flex flex-col items-center bg-slate-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Frontend</h3>
+        <div class="grid grid-cols-3 gap-10">
+          <img src={Html.src} alt="Html" class="size-12" />
+          <img src={Css.src} alt="Css" class="size-12" />
+          <img src={JavaScript.src} alt="JavaScript" class="size-12" />
+          <img src={React.src} alt="React" class="size-12" />
+          <img src={Next.src} alt="Next.js" class="size-12" />
+          <img src={Angular.src} alt="Angular" class="size-12" />
+          <img src={AstroIcon.src} alt="Astro" class="size-12" />
+          <img src={Tailwind.src} alt="Tailwind" class="size-12" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center bg-slate-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Backend</h3>
+        <div class="grid grid-cols-3 gap-10">
+          <img src={Node.src} alt="Node" class="size-12" />
+          <img src={MySQL.src} alt="MySQL" class="size-12" />
+          <img src={PostgreSQL.src} alt="PostgreSQL" class="size-12" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center bg-slate-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Herramientas</h3>
+        <div class="grid grid-cols-3 gap-10">
+          <img src={Vite.src} alt="Vite" class="size-12" />
+          <img src={GitHub.src} alt="GitHub" class="size-12" />
+          <img src={Docker.src} alt="Docker" class="size-12" />
+          <img src={VSCode.src} alt="VSCode" class="size-12" />
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>

@@ -8,103 +8,127 @@ import PostgreSQL from "../../public/assets/Icons/postgresql.svg";
 import Tailwind from "../../public/assets/Icons/tailwind.svg";
 import AstroIcon from "../../public/assets/Icons/astro.svg";
 import Next from "../../public/assets/Icons/next-js.svg";
+import { Github } from "@lucide/astro";
 ---
 
-<div
+<section
   id="Projects"
-  class="flex flex-col align-middle text-center w-3xl py-5 gap-3 max-sm:w-19/20"
+  class="flex flex-col gap-3 bg-slate-100 py-20 px-6 justify-center"
 >
-  <h2 class="text-2xl text-red-400 max-sm:text-xl">PROYECTOS</h2>
-  <CardProject
-    title="Sky Blue Weather"
-    description="Aplicación web que permite consultar el clima de cualquier ciudad de España, utilizando la API de AEMET. Incluye una interfaz intuitiva y sencilla."
-    date="En desarrollo"
-    link="https://sky-blue-weather.vercel.app/"
-  >
-    <Technologie logo={Next} name="Next" />
-    <Technologie logo={Tailwind} name="Tailwind" />
-  </CardProject>
-  <CardProject
-    title="Futsal24DH"
-    description="Web para un Torneo de Fútbol Sala, donde los usuarios podrán ver en tiempo real los cambios en los resultados y clasificación del torneo."
-    date="04/2025"
-    link="https://futsal24-dh.vercel.app/"
-  >
-    <Technologie logo={AstroIcon} name="Astro" />
-    <Technologie logo={Tailwind} name="Tailwind" />
-    <Technologie logo={Node} name="Node" />
-    <Technologie logo={PostgreSQL} name="PostgreSQL" />
-    <Technologie logo={React} name="React" />
-  </CardProject>
-  <CardProject
-    title="Menú de Restaurante"
-    description="Aplicación web que permite a los clientes de un restaurante visualizar el menú."
-    date="03/2025"
-    link="https://restaurant-menu-six-phi.vercel.app"
-  >
-    <Technologie logo={AstroIcon} name="Astro" />
-    <Technologie logo={Tailwind} name="Tailwind" />
-  </CardProject>
-  <CardProject
-    title="ScraperURL"
-    description="Aplicación web que en la actualidad analiza y extrae elementos SVG de sitios web a partir de una URL proporcionada. Próximamente podrá extraer cualquier elemento HTML."
-    date="02/2025"
-    link="https://scraper-url.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-    <Technologie logo={Node} name="Node" />
-    <Technologie logo={Tailwind} name="Tailwind" />
-  </CardProject>
-  <CardProject
-    title="Recreación de Google"
-    description="Recreación de la página de inicio de Google."
-    date="01/2025"
-    link="https://recreation-of-google.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-  </CardProject>
-  <CardProject
-    title="Lista de la compra"
-    description="Lista de la compra. Puede agregar artículos y su cantidad o eliminarlos."
-    date="01/2025"
-    link="https://to-do-list-rho-fawn-93.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-    <Technologie logo={Node} name="Node" />
-    <Technologie logo={PostgreSQL} name="PostgreSQL" />
-  </CardProject>
-  <CardProject
-    title="Recreación de YouTube"
-    description="Recreación de la página de inicio de YouTube."
-    date="01/2025"
-    link="https://recreation-of-you-tube.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-  </CardProject>
-  <CardProject
-    title="Tienda Online"
-    description="Tienda online con características principales como gestión de productos, imágenes alojadas en Amazon S3, búsqueda y filtrado, autenticación y roles, persistencia de datos, etc."
-    date="10/2024"
-    link="https://tienda-online-pearl.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-    <Technologie logo={Node} name="Node" />
-    <Technologie logo={PostgreSQL} name="PostgreSQL" />
-  </CardProject>
-  <CardProject
-    title="Vacaciones Toscano"
-    description="Aplicación web para la gestión de solicitudes de vacaciones, diseñada para facilitar el proceso de petición y aprobación por parte de los empleados y administradores de una empresa."
-    date="07/2024"
-    link="https://vacaciones-toscano.vercel.app/"
-  >
-    <Technologie logo={React} name="React" />
-    <Technologie logo={Vite} name="Vite" />
-    <Technologie logo={Node} name="Node" />
-    <Technologie logo={PostgreSQL} name="PostgreSQL" />
-  </CardProject>
-</div>
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">
+      Mis Proyectos
+    </h2>
+    <div class="mt-4 h-1 w-24 bg-blue-500 mx-auto"></div>
+    <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
+      Una selección de mis trabajos más recientes y destacados.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <CardProject
+      title="Sky Blue Weather"
+      description="Aplicación web que permite consultar el clima de cualquier ciudad de España, utilizando la API de AEMET. Incluye una interfaz intuitiva y sencilla."
+      date="En desarrollo"
+      link="https://sky-blue-weather.vercel.app/"
+    >
+      <Technologie logo={Next} name="Next" />
+      <Technologie logo={Tailwind} name="Tailwind" />
+    </CardProject>
+    <CardProject
+      title="Futsal24DH"
+      description="Web para un Torneo de Fútbol Sala, donde los usuarios podrán ver en tiempo real los cambios en los resultados y clasificación del torneo."
+      date="04/2025"
+      link="https://futsal24-dh.vercel.app/"
+    >
+      <Technologie logo={AstroIcon} name="Astro" />
+      <Technologie logo={Tailwind} name="Tailwind" />
+      <Technologie logo={Node} name="Node" />
+      <Technologie logo={PostgreSQL} name="PostgreSQL" />
+      <Technologie logo={React} name="React" />
+    </CardProject>
+    <CardProject
+      title="Menú de Restaurante"
+      description="Aplicación web que permite a los clientes de un restaurante visualizar el menú."
+      date="03/2025"
+      link="https://restaurant-menu-six-phi.vercel.app"
+    >
+      <Technologie logo={AstroIcon} name="Astro" />
+      <Technologie logo={Tailwind} name="Tailwind" />
+    </CardProject>
+    <!-- <CardProject
+      title="ScraperURL"
+      description="Aplicación web que en la actualidad analiza y extrae elementos SVG de sitios web a partir de una URL proporcionada. Próximamente podrá extraer cualquier elemento HTML."
+      date="02/2025"
+      link="https://scraper-url.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+      <Technologie logo={Node} name="Node" />
+      <Technologie logo={Tailwind} name="Tailwind" />
+    </CardProject>
+    <CardProject
+      title="Recreación de Google"
+      description="Recreación de la página de inicio de Google."
+      date="01/2025"
+      link="https://recreation-of-google.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+    </CardProject>
+    <CardProject
+      title="Lista de la compra"
+      description="Lista de la compra. Puede agregar artículos y su cantidad o eliminarlos."
+      date="01/2025"
+      link="https://to-do-list-rho-fawn-93.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+      <Technologie logo={Node} name="Node" />
+      <Technologie logo={PostgreSQL} name="PostgreSQL" />
+    </CardProject>
+    <CardProject
+      title="Recreación de YouTube"
+      description="Recreación de la página de inicio de YouTube."
+      date="01/2025"
+      link="https://recreation-of-you-tube.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+    </CardProject>
+    <CardProject
+      title="Tienda Online"
+      description="Tienda online con características principales como gestión de productos, imágenes alojadas en Amazon S3, búsqueda y filtrado, autenticación y roles, persistencia de datos, etc."
+      date="10/2024"
+      link="https://tienda-online-pearl.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+      <Technologie logo={Node} name="Node" />
+      <Technologie logo={PostgreSQL} name="PostgreSQL" />
+    </CardProject>
+    <CardProject
+      title="Vacaciones Toscano"
+      description="Aplicación web para la gestión de solicitudes de vacaciones, diseñada para facilitar el proceso de petición y aprobación por parte de los empleados y administradores de una empresa."
+      date="07/2024"
+      link="https://vacaciones-toscano.vercel.app/"
+    >
+      <Technologie logo={React} name="React" />
+      <Technologie logo={Vite} name="Vite" />
+      <Technologie logo={Node} name="Node" />
+      <Technologie logo={PostgreSQL} name="PostgreSQL" />
+    </CardProject> -->
+  </div>
+
+  <div class="text-center mt-16">
+          <a
+            href="https://github.com/Carlosrodr97/MyPortfolio.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
+          >
+            <Github class="size-6" />
+            Ver código del portafolio
+          </a>
+        </div>
+</section>
