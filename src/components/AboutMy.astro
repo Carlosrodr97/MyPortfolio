@@ -40,6 +40,7 @@ import { Image } from "astro:assets";
         target="_blank"
         rel="noopener noreferrer"
         class="text-slate-300 hover:text-white transition-colors"
+        aria-label="Perfil de GitHub de Carlos Rodríguez Cebador"
       >
         <Github class="size-6"/>
       </a>
@@ -48,6 +49,7 @@ import { Image } from "astro:assets";
         target="_blank"
         rel="noopener noreferrer"
         class="text-slate-300 hover:text-white transition-colors"
+        aria-label="Perfil de LinkedIn de Carlos Rodríguez Cebador"
       >
         <Linkedin class="size-6"/>
       </a>
@@ -62,10 +64,13 @@ import { Image } from "astro:assets";
           src={profileImage}
           alt="Carlos Rodríguez"
           class="w-full h-full object-cover"
-          width={800}
-          height={600}
-          loading="lazy"
+          width={320}
+          height={320}
+          loading="eager"
+          fetchpriority="high"
           format="webp"
+          quality={85}
+          densities={[1, 2]}
         />
       </div>
       <div

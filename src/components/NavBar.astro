@@ -13,15 +13,24 @@ import { AlignJustify } from "@lucide/astro";
       class="flex items-center"
     >
       <nav class="flex items-center gap-5 text-sm lg:text-base">
-        <span id="menuNav" class="opacity-0 flex flex-col items-center gap-5 w-screen md:w-auto py-4 fixed top-20 right-0
-        bg-slate-800 transition-all md:opacity-100 md:bg-transparent md:static md:flex-row md:p-0 lg:gap-5">
+        <span id="menuNav" class="hidden flex-col items-center gap-5 w-screen md:w-auto py-4 fixed top-20 right-0
+        bg-slate-800 transition-all md:opacity-100 md:bg-transparent md:static md:flex md:flex-row md:p-0 lg:gap-5">
           <a href="#AboutMy" class="hover:text-gray-400">Inicio</a>
           <a href="#Projects" class="hover:text-gray-400">Proyectos</a>
           <a href="#Skills" class="hover:text-gray-400">Aptitudes</a>
           <!-- <a href="#Experiencie" class="hover:text-gray-400">Experiencia</a> -->
         </span>
         <a href="#Contact" class="px-5 py-2 bg-blue-500 font-medium rounded-lg hover:bg-blue-600 transition-colors">Contacto</a>
-        <AlignJustify class="size-6 md:hidden" onclick="document.getElementById('menuNav').classList.toggle('opacity-0')" />
+        <AlignJustify class="size-6 md:hidden" id="menuToggle" />
       </nav>
     </div>
 </div>
+
+<script>
+  // Manejar la visibilidad del menú en pantallas pequeñas
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    const menuNav = document.getElementById('menuNav');
+    menuNav?.classList.toggle('hidden');
+    menuNav?.classList.toggle('flex');
+  });
+</script>
