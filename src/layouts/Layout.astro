@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 const { 
   title = "Carlos Rodríguez Cebador | Desarrollador Web",
@@ -64,6 +65,7 @@ const {
   <body>
     <slot />
     <Analytics />
+    <SpeedInsights />
   </body>
 </html>
 
