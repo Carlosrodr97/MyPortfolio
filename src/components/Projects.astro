@@ -16,9 +16,7 @@ import { Github } from "@lucide/astro";
   class="flex flex-col gap-3 bg-slate-100 py-20 px-6 justify-center"
 >
   <div class="text-center mb-16">
-    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">
-      Mis Proyectos
-    </h2>
+    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">Mis Proyectos</h2>
     <div class="mt-4 h-1 w-24 bg-blue-500 mx-auto"></div>
     <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
       Una selección de mis trabajos más recientes y destacados.
@@ -26,7 +24,7 @@ import { Github } from "@lucide/astro";
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-    <CardProject
+    <!-- <CardProject
       title="Sky Blue Weather"
       description="Aplicación web que permite consultar el clima de cualquier ciudad de España, utilizando la API de AEMET. Incluye una interfaz intuitiva y sencilla."
       date="En desarrollo"
@@ -34,7 +32,7 @@ import { Github } from "@lucide/astro";
     >
       <Technologie logo={Next} name="Next" />
       <Technologie logo={Tailwind} name="Tailwind" />
-    </CardProject>
+    </CardProject> -->
     <CardProject
       title="Futsal24DH"
       description="Web para un Torneo de Fútbol Sala, donde los usuarios podrán ver en tiempo real los cambios en los resultados y clasificación del torneo."
@@ -121,14 +119,14 @@ import { Github } from "@lucide/astro";
   </div>
 
   <div class="text-center mt-16">
-          <a
-            href="https://github.com/Carlosrodr97/MyPortfolio.git"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
-          >
-            <Github class="size-6" />
-            Ver código del portafolio
-          </a>
-        </div>
+    <a
+      href="https://github.com/Carlosrodr97/MyPortfolio.git"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
+    >
+      <Github class="size-6" />
+      Ver código del portafolio
+    </a>
+  </div>
 </section>
