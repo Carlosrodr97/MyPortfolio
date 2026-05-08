@@ -1,18 +1,46 @@
 ---
-
+import CardExperience from "./CardExperience.astro";
 ---
 
-<div
-  id="Experiencie"
-  class="flex flex-col align-middle text-center w-3xl py-8 space-y-2 max-sm:w-full max-sm:px-2"
+<section
+  id="Experience"
+  class="flex flex-col gap-3 bg-white py-20 px-6 justify-center"
 >
-  <h2 class="text-2xl text-red-400 max-sm:text-xl">EXPERIENCIA</h2>
-  <p class="text-lg max-sm:text-sm">
-    Aunque no tengo experiencia laboral en este puesto, cuento con una gran
-    capacidad de aprendizaje y una actitud proactiva. He dedicado tiempo a
-    formarme de manera autodidacta, desarrollando habilidades con las que estoy
-    listo para aplicar en un entorno profesional. Estoy entusiasmado por la
-    oportunidad de aportar mi energía y compromiso, y estoy seguro de que mi
-    motivación y ganas de crecer harán la diferencia en su equipo.
-  </p>
-</div>
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">
+      Mi Experiencia
+    </h2>
+    <div class="mt-4 h-1 w-24 bg-blue-500 mx-auto"></div>
+    <!-- <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
+      Subtítulo
+    </p> -->
+  </div>
+
+  <ol
+    class="relative space-y-8 before:absolute before:-ms-px before:h-full before:w-0.5 before:rounded-full before:bg-gray-200"
+  >
+    <CardExperience
+      ocupation="Oficial de 3ª Electricista"
+      company="Toscano Línea Electrónica S.L."
+      startDate="Abril 2022"
+      endDate="Marzo 2026"
+      description="Durante mi tiempo como Oficial de 3ª Electricista, adquirí y desarrollé habilidades y experiencia produciendo cuadros eléctricos y trabajando en equipo para completar proyectos de manera eficiente y segura."
+    />
+
+    <CardExperience
+      ocupation="Prácticas de Desarrollo Web"
+      company="Toscano Línea Electrónica S.L."
+      startDate="Noviembre 2025"
+      endDate="Marzo 2026"
+      description="Aprendí y apliqué conocimientos en desarrollo web, participando en la creación de proyectos internos y colaborando con el equipo de desarrollo en tareas de mantenimiento y mejora de aplicaciones existentes."
+    />
+
+    <CardExperience
+      ocupation="Desarrollador Web"
+      company="Toscano Línea Electrónica S.L."
+      startDate="Abril 2026"
+      endDate="Presente"
+      description="Actualmente estoy trabajando como desarrollador web, donde aplico mis habilidades en el desarrollo de aplicaciones web, colaborando en la creación de nuevas funcionalidades y mejorando la experiencia del usuario en los proyectos."
+    />
+  </ol>
+</section>
